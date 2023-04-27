@@ -15,4 +15,5 @@ csv data files
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+In this project i used only pdsnd_github.
 
