@@ -11,6 +11,7 @@ Program analyzes the bike share company database
 
 ### Files used
 bikeshare.py
+csv data files
 
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
