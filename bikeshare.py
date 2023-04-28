@@ -22,7 +22,7 @@ def get_filters():
     city_list = ['New York City', 'Chicago', 'Washington', 'random']
     
     while True:
-      city = input("\nPlease enter one of the cities "+ str(city_list[ :3]) +" or enter 'Random' if you want me to choose for you\n").title()
+      city = input("\nPlease enter one of the cities "+ str(city_list[ :3]) +" .\If you want me to choose for you type 'Random'\n").title()
       
       if city == ("quit".title()):
         quit()
@@ -40,7 +40,7 @@ def get_filters():
     months_list = ['January', 'February', 'March', 'April', 'May', 'June', 'All']
 
     while True:
-      month = input("\nPlease enter one of the months or type 'All' if you want all of them "+ str(months_list) +"\nor enter 'Random' if you want me to choose for you\n").title()
+      month = input("\nPlease enter one of the months or type 'All' if you want all of them "+ str(months_list) +".\If you want me to choose for you type 'Random'\n").title()
       
       if month == ("quit".title()):
         quit()
