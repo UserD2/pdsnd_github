@@ -235,6 +235,13 @@ def user_stats(df):
     except:
       print("\nMost common year:\nNo data available for this filters.")
 
+    try:
+      sum_year = df['Birth Year'].sum()
+      count_year = df['Birth Year'].value_counts()
+      print('\nAverage year year:', (sum_year/avg_year))
+    except:
+      print("\nAverage year:\nNo data available for this filters.")
+
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
