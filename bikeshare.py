@@ -216,7 +216,7 @@ def user_stats(df):
     except:
       print("\nGender types:\nNo data available for this filters.")
 
-    # Display earliest, most recent, and most common year of birth /it's working but i could not find proper except type :( (even with Udacity GPT)
+    # Display earliest, most recent, and most common year of birth
     try:
       earliest_year = df['Birth Year'].min()
       print('\nEarliest year:', earliest_year)
