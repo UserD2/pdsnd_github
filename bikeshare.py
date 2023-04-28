@@ -185,12 +185,10 @@ def trip_duration_stats(df):
     # display total travel time
     total_travel_time = df['Trip Duration'].sum()
     print('Total travel time in HH:MM:SS', convert_sec(total_travel_time))
-    #print('Total travel time in hours:', round(total_travel_time/3600, 2))
 
     # display mean travel time
     mean_travel_time = df['Trip Duration'].mean()
     print('Mean travel time in HH:MM:SS', convert_sec(mean_travel_time))
-    #print('Mean travel time in hours:', round(mean_travel_time/3600,2))
 
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
@@ -216,7 +214,7 @@ def user_stats(df):
     except:
       print("\nGender types:\nNo data available for this filters.")
 
-    # Display earliest, most recent, and most common year of birth /it's working but i could not find proper except type :( (even with Udacity GPT)
+    # Display earliest, most recent, and most common year of birth
     try:
       earliest_year = df['Birth Year'].min()
       print('\nEarliest year:', earliest_year)
